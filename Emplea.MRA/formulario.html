@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro al Taller - Karla Dávila</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: #f0f8ff;
+        }
+        img {
+            display: block;
+            margin: 0 auto 1rem;
+            max-width: 250px;
+            border-radius: 8px;
+        }
+        .datos-alumno {
+            background: #e6f2ff;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        label {
+            display: inline-block;
+            margin: 0.5rem 0 0.2rem;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            margin-top: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Imagen agregada -->
+<img src="https://cdn-icons-png.flaticon.com/512/1005/1005141.png" alt="Logo de programación">
+
+<div class="datos-alumno">
+    Nombre: Karla Dávila | Grupo: 305
+</div>
+
+<h1>Registro al Taller de Programación</h1>
+
+<form action="" method="post">
+    <fieldset>
+        <legend>Datos personales</legend>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="semestre">Semestre:</label>
+        <select id="semestre" name="semestre" required>
+            <option value="">Selecciona...</option>
+            <option value="1">1°</option>
+            <option value="2">2°</option>
+            <option value="3">3°</option>
+            <option value="4">4°</option>
+            <option value="5">5°</option>
+            <option value="6">6°</option>
+        </select>
+
+        <label>Área de interés:</label><br>
+        <input type="checkbox" name="interes" value="web"> Desarrollo Web<br>
+        <input type="checkbox" name="interes" value="apps"> Apps móviles<br>
+        <input type="checkbox" name="interes" value="ia"> Inteligencia Artificial<br>
+
+        <label for="mensaje">Mensaje adicional:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe aquí tu mensaje..."></textarea>
+
+        <button type="submit">Enviar registro</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
